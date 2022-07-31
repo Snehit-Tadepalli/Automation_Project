@@ -81,4 +81,4 @@ echo "Custom Message: Finished logging to invetory.html file."
 
 #Creating cron job file
 cronFilePath="/etc/cron.d"
-test -e $cronFilePath/automation && echo "Cron job already exist" || echo "* * * * * root cd /root/Automation_Project && sudo bash automation.sh" >> $cronFilePath/automation
+test -e $cronFilePath/automation && echo "Cron job already exist" || echo "0 0 * * * root cd /root/Automation_Project && sudo bash automation.sh" >> $cronFilePath/automation
